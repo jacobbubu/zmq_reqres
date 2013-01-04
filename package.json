@@ -1,6 +1,6 @@
 {
   "name": "zmq_reqres",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A CoffeeScript implementation of ZeroMQ request/response model",
   "author": "Rong Shen <rong.shen@gmail.com>",
   "homepage": "",
