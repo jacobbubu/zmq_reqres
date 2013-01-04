@@ -26,3 +26,7 @@ module.exports = class Broker
         
   _dealerRx: (envelopes..., payload) =>
     @router.send [envelopes, payload]
+
+  close: =>
+    @dealer.close()
+    @router.close()

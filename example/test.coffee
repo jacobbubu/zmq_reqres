@@ -25,11 +25,15 @@ for i in [0...totalCount]
     console.log "Completed: %s (%s)", data.handle.id, data.result
     if count is totalCount
       console.log 'Total count:', count
-      process.exit(0)
+      shutDown()
 
   handle.on "error", (error) =>
     count++
     console.error "Failed: %s (%s)", data.handle.id, error
     if count is totalCount
       console.log 'Total count:', count
-      process.exit(0)
+      shutDown()
+
+shutDown = ->
+  responder.close()
+  broker.close()

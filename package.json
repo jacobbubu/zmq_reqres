@@ -6,7 +6,7 @@
   "homepage": "",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "http://github.com/jacobbubu/zmq_reqres.git"
   },
   "engines": {
     "node": ">=0.6.0"
